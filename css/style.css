@@ -50,7 +50,7 @@ body {
 .baner {
   height: 903px;
   margin-top: 50px;
-  background-image: url(../img/baner.jpg);
+  background-image: url(../img/baner4.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -769,5 +769,11 @@ body {
 .navbar-toggle {
   margin-top: 0;
   border: none; }
+
+@media (min-width: 2000px) {
+    .baner__cont img {
+        display: none;
+    }
+}
 
 /*# sourceMappingURL=style.css.map */
