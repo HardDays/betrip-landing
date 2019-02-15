@@ -588,11 +588,13 @@
 
                 </div>
                 <img src="img/contact.svg" class="img-responsive form-follow__title" alt="">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <p class="sent">Message has been sent!</p>
-                <button type="submit">Send</button>
+                <form id="subscribeForm" action="" onsubmit="ssss();return false;" method="post">
+                    <input id="subName" name="name" type="text" placeholder="Name">
+                    <input id="subEmail" name="email" type="email" placeholder="Email" required>
+                    <textarea id="subMessage" name="message" placeholder="Message" required></textarea>
+                    <p class="sent">Message has been sent!</p>
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
     </section>

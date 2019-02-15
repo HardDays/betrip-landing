@@ -43,3 +43,36 @@ $(window).load(function() {
     
 });
 
+
+function ssss() {
+    
+    var name = $('#subName').val();
+    var email = $('#subEmail').val();
+    var message = $('#subMessage').val();
+    var data = `{\"name\": \"${name}\",\"email\": \"${email}\",\"message\": \"${message}\"}`;
+    alert('Thank you!');
+    $.ajax({
+      type: 'POST',
+      url: 'http://35.204.166.49:3000/subscribe',
+      data: data,
+      dataType: 'json',
+      contentType: 'application/json',
+      success: function(data) {
+      },
+      error: function (jqXHR, exception) {
+        
+        },
+    });
+    // var dict = { key1: 'val1', key2: 10 };
+
+    // $.ajax({
+    //     url: '/echo/json/',
+    //     type: 'POST',
+    //     contentType: 'application/json; charset=utf-8',
+    //     dataType: 'json',
+    //     data: {json: JSON.stringify(dict) },
+    //     success:function(data){
+    //     alert('data='+JSON.stringify(data));}
+    // });
+    return false;
+};
